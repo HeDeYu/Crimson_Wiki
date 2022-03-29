@@ -66,7 +66,7 @@ def build_norm_layer(cfg, num_features, postfix=''):
 
 `ResNet-34`：
 
-![](/home/rr/Desktop/1.png)
+![](./docs utils/resnet34.png)
 
 ![img](https://robotics-robotics.feishu.cn/space/api/box/stream/download/asynccode/?code=MjVkNTZlZDhkZTc0ZTkwMDMwZjA2NmQ2OWE5MTRiOThfQ29NemlnYzlGRGw4V1hGUXo0MmtmYTFsV01qTW9WelNfVG9rZW46Ym94Y25mRzR5dDZpTXZud1NRV1Z1Yk9sWU9kXzE2NDg0NTU1Mjk6MTY0ODQ1OTEyOV9WNA)
 
