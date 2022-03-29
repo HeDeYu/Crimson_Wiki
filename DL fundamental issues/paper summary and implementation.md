@@ -1,4 +1,4 @@
-BN
+# `Batch Normalization`
 
 以`mmcv`的实现为例。一如既往，注册组件NORM_LAYERS
 
@@ -60,13 +60,13 @@ def build_norm_layer(cfg, num_features, postfix=''):
 
 
 
-`ResNet`系列
+# `ResNet`系列
 
 要点介绍
 
 `ResNet-34`：
 
-![img](https://robotics-robotics.feishu.cn/space/api/box/stream/download/asynccode/?code=MTc1ODUzYTA3OGRlYzZlNTg0YjNiNTQzZDNhOTMxMTJfVk5DQ3NzN0ZhZzByRGxHREVpYzFXU3BJVmNoMEdETHFfVG9rZW46Ym94Y25MOFIyQUtWRFZTeURrZlN2VGVldW9nXzE2NDg0NTU1Mjk6MTY0ODQ1OTEyOV9WNA)
+![](/home/rr/Desktop/1.png)
 
 ![img](https://robotics-robotics.feishu.cn/space/api/box/stream/download/asynccode/?code=MjVkNTZlZDhkZTc0ZTkwMDMwZjA2NmQ2OWE5MTRiOThfQ29NemlnYzlGRGw4V1hGUXo0MmtmYTFsV01qTW9WelNfVG9rZW46Ym94Y25mRzR5dDZpTXZud1NRV1Z1Yk9sWU9kXzE2NDg0NTU1Mjk6MTY0ODQ1OTEyOV9WNA)
 
@@ -394,6 +394,8 @@ class ResLayer(nn.Sequential):
 
 
 `ResNet`类首先定义好了各个`ResNet`使用的`Block`类型与每个`Stage`的`Block`数量。
+
+
 
 
 
