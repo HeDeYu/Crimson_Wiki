@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/rr/.pyenv/versions/3.9.4/lib/python3.9/site-packages/trtpy/trt8cuda112cudnn8/include/**",
+                "/home/rr/.pyenv/versions/3.9.4/lib/python3.9/site-packages/trtpy/cpp-packages/opencv4.2/include/**"
+            ], // 让 intelliSense engine（语法提示，自动补全）能够找到所有需要的头文件 
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
