@@ -1,8 +1,8 @@
-# Tensor类
+# `Tensor`类
 
-与numpy的ndarray类似，通常在底层共享内存，区别是tensor能在GPU或者其它加速硬件上运算，同时对自动微分做了优化。
+与`numpy`的`ndarray`类似，通常在底层共享内存，区别是tensor能在GPU或者其它加速硬件上运算，同时对自动微分做了优化。
 
-## Tensor实例化
+## `Tensor`实例化
 
 基于数据（嵌套list对象）直接实例化（构造函数）
 
@@ -29,7 +29,7 @@ ones_tensor = torch.ones(shape)
 zeros_tensor = torch.zeros(shape)
 ```
 
-tensor转为numpy array
+`tensor`转为`numpy` `array`
 
 ```python
 t = torch.ones(5)
@@ -42,23 +42,23 @@ print(f"n: {n}")  # n: [1. 1. 1. 1. 1.]
 
 
 
-## Tensor类属性
+## `Tensor`类属性
 
 3个属性shape，dtype，device
 
 
 
-## Tensor类方法
+## `Tensor`类方法
 
-### 从cpu复制数据到gpu
+### 从`cpu`复制数据到`gpu`
 
 ```python
 tensor = tensor.to("cuda")
 ```
 
-### numpy标准索引/切片/赋值
+### `numpy`标准索引/切片/赋值
 
-与numpy操作一致
+与`numpy`操作一致
 
 ```python
 tensor = torch.ones(4, 4)
@@ -119,19 +119,29 @@ print(agg_item, type(agg_item))  # 12.0 <class 'float'>
 
 通常API带有下划线后缀的，为原地操作，通常不建议原地操作，以免计算中间loss时出错。
 
+
+
+### `Tensor`的`view()`
+
+https://pytorch.org/docs/stable/generated/torch.Tensor.view.html#torch.Tensor.view
+
+张量的`view`方法返回与原张量共享内存的新张量，不进行数据复制的情况下改变张量的维度表达，或者以新的数据类型解释数据。
+
+
+
 更多操作查阅
 
 https://pytorch.org/docs/stable/torch.html
 
 
 
-# Datasets & DataLoaders
+# `Datasets` & `DataLoaders`
 
 总结到另一篇文档 torch_utils_data.md。
 
 
 
-# Build and use models
+# `Build and use models`
 
 注意，通常不要直接使用model的forward，因为实际训练时，调用model本身时除了forward还有autograd的一些动作。
 
