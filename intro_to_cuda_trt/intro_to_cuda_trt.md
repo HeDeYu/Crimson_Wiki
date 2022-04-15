@@ -430,11 +430,26 @@ builder->destroy();
 
 ### 5.1 完整流程
 
+待完善
+
 ### 5.2 完整流程中的默认行为抽象以及`plugin`开发的简化
 
+待完善
 
+## 6 `Int8`量化
 
+待完善
 
+## 7 案例
+
+```C++
+// 通过智能指针管理nv返回的指针参数
+// 内存自动释放，避免泄漏
+template<typename _T>
+shared_ptr<_T> make_nvshared(_T* ptr){
+    return shared_ptr<_T>(ptr, [](_T* p){p->destroy();});
+}
+```
 
 
 
